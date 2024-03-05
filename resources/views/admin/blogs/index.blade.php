@@ -103,7 +103,7 @@
                 dataType: 'JSON'
             },
             "columns": [
-                { data: 'DT_RowIndex', name: 'DT_RowIndex' },
+                { data: 'DT_RowIndex', name: 'DT_RowIndex',searchable: false },
                 { data: 'title', name: 'title', },
                 { data: 'slug', name: 'slug' },
                 { data: 'description', name: 'description' },
