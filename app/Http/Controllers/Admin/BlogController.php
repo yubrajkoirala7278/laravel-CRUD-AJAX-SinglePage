@@ -30,7 +30,7 @@ class BlogController extends Controller
             return DataTables::of($blogs)
                 ->addIndexColumn()
                 ->addColumn('action', function ($row) {
-                    $viewUrl = route('blog.view', ['slug' => $row->slug]);
+                    $viewUrl = route('blogs.view', ['slug' => $row->slug]);
                     return '<a href="javascript:void(0)" class="btn btn-info editButton" data-slug="' . $row->slug . '">Edit</a> 
                     <a href="javascript:void(0)" class="btn btn-danger delButton" data-slug="' . $row->slug . '">Delete</a> 
                     <a href="' . $viewUrl . '" class="btn btn-success">View</a>';

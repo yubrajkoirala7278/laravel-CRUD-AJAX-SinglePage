@@ -53,7 +53,7 @@
             var formData = new FormData(createFormData);
             // console.log(formData);
             $.ajax({
-                url: "{{ route('blog.store')}}", 
+                url: "{{ route('blogs.store')}}", 
                 method: 'POST', 
                 processData: false, 
                 contentType: false, 
@@ -98,7 +98,7 @@
             "deferRender": true,
             "ordering": false,
             "ajax": {
-                url: "{{ route('blog.index') }}",
+                url: "{{ route('blogs.index') }}",
                 type: 'GET',
                 dataType: 'JSON'
             },
@@ -161,7 +161,7 @@
             var formUpdateData = new FormData(updateFormData);
             // console.log(formData);
             $.ajax({
-                url: "{{ route('blog.update') }}",
+                url: "{{ route('blogs.update') }}",
                 method: 'POST', 
                 processData: false, 
                 contentType: false, 
