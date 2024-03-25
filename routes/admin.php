@@ -1,11 +1,11 @@
 <?php
 
-// use App\Http\Controllers\Admin\BlogController;
+
 
 use App\Http\Controllers\Admin\BlogController;
 use Illuminate\Support\Facades\Route;
 
-
+// for single page
 Route::get('/blogs',[BlogController::class,'home'])->name('blog');
 Route::post('/blogs/store', [BlogController::class, 'store'])->name('blogs.store');
 Route::put('/blogs/update', [BlogController::class, 'update'])->name('blogs.update');

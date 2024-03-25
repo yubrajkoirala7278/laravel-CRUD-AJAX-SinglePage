@@ -97,6 +97,7 @@
             "serverSide": true,
             "deferRender": true,
             "ordering": false,
+            searchDelay:3000,
             "ajax": {
                 url: "{{ route('blogs.index') }}",
                 type: 'GET',
@@ -116,9 +117,11 @@
                 },
                 {data: 'action',name: 'action',orderable: false,searchable: false},
             ],
-            "lengthMenu": [[10, 20, 50, -1], [10, 20, 50, "All"]],
+            "lengthMenu": [[5, 20, 50, -1], [5, 20, 50, "All"]],
             "pagingType": "simple_numbers"
         });
+
+       
         // ===================================================================//
 
         // ============Fill Current Data to form while UPDATION================//
